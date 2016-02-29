@@ -1,3 +1,12 @@
+num = 5
+loop =0
+while num > 2:  # prints 5 4 3
+    loop += 1
+    print "Loop:{} Num:{}".format(loop, num)
+    num -= 1
+print "Output the loop Num:", num  # prints the latest value of num : 2
+
+
 num = 0
 while num <= 5:
     print(num)
@@ -16,7 +25,7 @@ while numberOfLoops < 10:
 print("Number of apples: " + str(numberOfApples))
 """
 
-#infinite loop
+# infinite loop
 """
 num = 100
 while not False:
@@ -32,8 +41,7 @@ while True:
         break
     print(num)
     num -= 1
-print(*'Outside of loop')
-
+print('Outside of loop')
 
 number = 2
 while number <= 10:
@@ -58,8 +66,6 @@ while end >= 1:
     end -= 1
 print(result)
 
-
-
 # for loop
 
 school = 'Massachusetts Insitute of Technology'
@@ -78,7 +84,6 @@ for char in school:
 print(numVowels)
 print(numCons)
 
-
 num = 10
 for num in range(5):
     print(num)
@@ -86,7 +91,7 @@ print(num)  # o/p - 0,1,2,3,4,4
 
 divisor = 2
 for num in range(0, 10, 2):
-    print(num/divisor)
+    print(num / divisor)
 
 for variable in range(20):
     if variable % 4 == 0:
@@ -94,12 +99,10 @@ for variable in range(20):
     if variable % 16 == 0:
         print("Foo!")
 
-
 for i in range(11):
     if i % 2 == 0 and i != 0:
         print(i)
 print("Goodbye!")
-
 
 count = 0
 phrase = "hello, world"
@@ -118,3 +121,43 @@ for iteration in range(5):
         count += len(phrase)
         break
     print("Iteration " + str(iteration) + "; count is: " + str(count))
+
+print "Range Example 1"
+divisor = 2
+for num in range(0, 10, 2):
+    print num / divisor
+
+print "Range Example 2"
+for variable in range(20):  # 0 - 19 : 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+    if variable % 4 == 0:
+        print variable
+
+    if variable % 16 == 0:
+        print "Foo!"
+
+print "Reverse Range Example 1"
+
+for number in reversed(range(11)):
+    if number == 0:
+        break
+    if number % 2 == 0:
+        print number
+
+print "Reverse Range Example 2"
+for number in range(10, 2, -2):  # 10 8 6 4 2
+    print number
+
+print "Reverse Range Example 3"
+for number in range(0, 10, 2):
+    print 10 - number
+
+
+print "Range Sum example"
+
+end = 6
+result = 0
+for number in range(1,end+1):
+    result += number
+print "Sum is ", result
+
+

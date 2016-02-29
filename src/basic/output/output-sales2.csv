@@ -1,0 +1,4 @@
+id ,name,age,sex,city,state,zip
+100, John Smith, 32,M, Austin, TX, 78727
+200, Joe Johnson, 13, M, Dallas, TX, 75201
+300, Bob Jones, 14, M, Houston, TX, 77028
